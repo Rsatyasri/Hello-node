@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .container {
+      margin-top: 300px;
+      padding-top: 150px;
+      width: 40%; /* Adjust container width */
+      margin: auto; /* Center align container */
+    }
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+      background-color: rgba(255, 255, 255, 0.8); /* Add opacity to background */
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      height:100vh;
+      font-family: 'Arial', sans-serif; /* Change font */
+      background-image: url('f.jpg');
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000; /* Make sure it's above other content */
+    }
+    footer {
+      background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+      padding: 50px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      z-index: 1000; /* Make sure it's above other content */
+    }
+    h1 {
+      background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 36px;
+      color: #fff;
+      font-family: 'Arial Black', sans-serif; /* Example of stylish font */
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+      animation: floatHeader 3s infinite ease-in-out;
+    }
+    @keyframes floatHeader {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .btn {
+      margin-top: 20px;
+    }
+    .btn:hover {
+      background-color: #22d4bc; /* Darker background on hover */
+    }
+  </style>
+</head>
+<header>
+  <h1>Sport Scheduler</h1>
+</header>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card text-center py-4">
+          <div class="card-body">
+            <h5 class="card-title">Users Login</h5>
+            <p class="card-text">Login as a regular user.</p>
+            <a href="signinu.html" class="btn btn-primary">Sign In</a>
+            <a href="signupu.html" class="btn btn-secondary">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <div class="card text-center py-4">
+          <div class="card-body">
+            <h5 class="card-title">Admin Login</h5>
+            <p class="card-text">Login as an administrator.</p>
+            <a href="signina.html" class="btn btn-primary">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
